@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+ html {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
+body {
+  color: #333;
+  background: #fff;
+  font: 16px/1.6 "Muli", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+#header {
+  padding: 15px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s linear;
+}
+.mainclass,
+.custom-carousel,
+.carousel,
+.carousel-inner {
+  overflow: visible !important;
+}
+
+
+
+.mainclass .carousel-item:before {
+  content: '';
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+.mainclass .carousel-caption {
+  left: 5%;
+  right: 5%;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  bottom: 10%;
+}
+
+.mainclass {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; 
+  align-items: center;     
+}
+img{
+  height: 500px !important;
+  width:300px !important;
+  margin-right: auto;
+}
+.carousel-slide {
+  display: flex;
+  align-items: center;        
+  justify-content: space-between;
+   min-height: 650px;          
+} 
+
+.carousel-text {
+  width: 50%;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;  
+  align-items: center;       
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-image img {
+  max-height: 300px;
+  object-fit: contain;
 }
+.carousel-wrapper {
+  display: flex;
+  justify-content: center; 
+  width:100%
+
+}
+.custom-carousel {
+  position: relative;
+}
+
+
+
+
+
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+  width: 50px;
+  opacity: 1;
+   color: aquamarine;
+} 
+
