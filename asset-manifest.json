@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/eecom/static/css/main.4f0ddec0.css",
+    "main.js": "/eecom/static/js/main.bf168270.js",
+    "static/media/Wavy_Bus-17_Single-09.jpg": "/eecom/static/media/Wavy_Bus-17_Single-09.a19ed1d2f0d9c95bd012.jpg",
+    "static/media/20423.jpg": "/eecom/static/media/20423.0cf388b4759ef1491f8a.jpg",
+    "static/media/3174102.jpg": "/eecom/static/media/3174102.e31d85b903fd640e5d5a.jpg",
+    "index.html": "/eecom/index.html",
+    "main.4f0ddec0.css.map": "/eecom/static/css/main.4f0ddec0.css.map",
+    "main.bf168270.js.map": "/eecom/static/js/main.bf168270.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f0ddec0.css",
+    "static/js/main.bf168270.js"
+  ]
+}
